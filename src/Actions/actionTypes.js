@@ -1,0 +1,19 @@
+const Types = {
+  // TODO
+  TODO: {
+    ADD_TODO: 'ADD_TODO',
+    REMOVE_TODO: 'REMOVE_TODO',
+    TOGGLE_TODO: 'TOGGLE_TODO',
+    SET_VISIBILITY_FILTER: 'SET_VISIBILITY_FILTER'
+  },
+
+  // VISIBILITY_FILTER
+  VISIBILITY_FILTER: {
+    SHOW_ALL: 'SHOW_ALL',
+    SHOW_COMPLETED: 'SHOW_COMPLETED',
+    SHOW_ACTIVE: 'SHOW_ACTIVE',
+  }
+};
+
+export const { TODO, VISIBILITY_FILTER } = Types;
+export default Types;

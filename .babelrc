@@ -1,0 +1,36 @@
+{
+  "plugins": [
+    ["babel-plugin-root-import", { 
+      "paths": [
+        {
+          "rootPathPrefix": "~",
+          "rootPathSuffix": "src" 
+        },
+        {
+          "rootPathPrefix": "%",
+          "rootPathSuffix": "src/App" 
+        }
+      ]
+    }
+    ]
+  ],
+  "env": { // For React Native
+    "production": {
+      "plugins": [
+        ["babel-plugin-root-import", { 
+          "paths": [
+            {
+              "rootPathPrefix": "~",
+              "rootPathSuffix": "src" 
+            },
+            {
+              "rootPathPrefix": "%",
+              "rootPathSuffix": "src/App" 
+            }
+          ]
+        }
+        ]
+      ],
+    }
+  }
+}
